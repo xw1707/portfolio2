@@ -5,5 +5,5 @@ from . models import Blog
 
 
 def blog_page(request):
-    blog = Blog.objects
-    return render(request, 'blog.html', {'blog': blog})
+    blogs = Blog.objects
+    return render(request, 'blog.html', {'blogs': blogs})
